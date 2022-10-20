@@ -36,6 +36,9 @@ else
 	@echo "${MODE}: Building with Hyper-v generation 1 VM and save to Classic Storage Account"
 	@packer build -var-file=vhdbuilder/packer/settings.json vhdbuilder/packer/vhd-image-builder-mariner.json
 endif
+else ifeq (${OS_VERSION}, cg)
+	@echo "${MODE}: Building with Hyper-v generation 2 VM"
+	@packer build -var-file=vhdbuilder/packer/settings.json vhdbuilder/packer/vhd-image-builder-mariner2-cgroups.json
 else ifeq (${OS_VERSION},V2)
 ifeq (${ARCHITECTURE}, ARM64)
 ifeq (${MODE},gen2Mode)
