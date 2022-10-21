@@ -78,6 +78,11 @@
       },
       {
         "type": "file",
+        "source": "vhdbuilder/packer/preview.repo",
+        "destination": "/home/packer/preview.repo"
+      },
+      {
+        "type": "file",
         "source": "vhdbuilder/packer/cleanup-vhd.sh",
         "destination": "/home/packer/cleanup-vhd.sh"
       },
