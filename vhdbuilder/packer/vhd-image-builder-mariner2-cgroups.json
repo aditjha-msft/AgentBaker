@@ -31,7 +31,7 @@
         "os_type": "Linux",
         "os_disk_size_gb": 30,
         "shared_image_gallery": {
-            "subscription": "EdgeOS_Mariner_Platform_dev",
+            "subscription": "b8f169b2-5b23-444a-ae4b-19a31b5e3652",
             "resource_group": "aditjhaakstest",
             "gallery_name": "aditjhaAKSCgroupsV2",
             "image_name": "marinercgroupsv2",
